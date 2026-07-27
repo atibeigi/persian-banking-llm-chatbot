@@ -33,7 +33,7 @@
 | `02_slot_filling.ipynb` | استخراج/نرمال‌سازی مقادیر اسلات از پیام کاربر با LLM |
 | `03_multi_turn_chatbot.ipynb` | مدیریت کامل مکالمه‌ی چندنوبته (کلاس `MultiTurnChatBot`) و تولید خروجی JSON نهایی |
 | `04_evaluation.ipynb` | ارزیابی کمّی (روی داده‌ی validation، در صورت وجود) و کیفی (سناریوهای شبیه‌سازی‌شده) |
-| `chatbot_common.py` | ماژول مشترک: کلاینت LLM، پارس خروجی JSON مدل، توابع بارگذاری داده |
+| `chatbot_common.py` | ماژول مشترک پروژه — کلاینت LLM، پارس خروجی JSON، بارگذاری intent/slot |
 | `slots.txt` | لیست برچسب‌های اسلات پروژه |
 | `data/*.json` | خروجی نوت‌بوک ۰۰  |
 
@@ -49,6 +49,7 @@ pip install -r requirements.txt
 export ANTHROPIC_API_KEY="..."     # اگر LLM_PROVIDER="anthropic" 
 # یا
 export OPENAI_API_KEY="..."        # اگر LLM_PROVIDER="openai"
+
 ```
 
 
